@@ -1,0 +1,130 @@
+body {
+    font-family: "Open Sans", sans-serif;
+    color: #0c0c0c;
+}
+
+:root {
+    --link-hover-color: #00bbf0;
+    --bg-color: #00204a;
+}
+
+.link-custom {
+    color: inherit;
+    text-decoration: none;
+}
+
+.link-custom:hover {
+    color: var(--link-hover-color);
+}
+
+.title-custom {
+    color: var(--link-hover-color);
+}
+
+.theme-primary {
+    background-color: var(--bg-color);
+    color: #fff;
+}
+
+.btn-custom {
+    background-color: var(--link-hover-color);
+    color: #fff;
+    padding: 10px 45px;
+}
+
+.btn-custom:hover {
+    background-color: #007fa4;
+}
+
+#header {
+    color: #fff;
+}
+
+#header .nav-link {
+    padding: 12px 20px;
+    text-transform: uppercase;
+    color: inherit;
+    font-weight: 600;
+}
+
+#header .nav-link:hover {
+    color: var(--link-hover-color);
+}
+
+#header .nav-link.active {
+    color: var(--link-hover-color);
+}
+
+.navbar-bg {
+    background-color: var(--bg-color);
+}
+
+#welcome {
+    background: url(../images/hero-bg.png);
+    background-size: cover;
+    background-position: center;
+    min-height: 100vh;
+    padding-block: 115px 145px;
+}
+
+.slider-img {
+    animation: upDown 3s infinite;
+}
+
+@keyframes upDown {
+    0% {
+      transform: translateY(-20px);
+    }
+    50% {
+        transform: translateY(20px);
+      }
+    100% {
+      transform: translateY(-20px); /* Trở lại vị trí ban đầu */
+    }
+  }
+
+section {
+    padding-block: 100px;
+}
+
+#services .card-img-top img {
+    height: 75px;
+    width: 75px;
+}
+
+#services .card {
+    background-color: #ddd;
+}
+
+#why img {
+    width: 120px;
+    height: 120px;
+}
+
+.card-custom {
+    background-color: #002A61;
+    color: #fff;
+}
+
+.card-custom img {
+    width: 120px;
+    height: 120px;
+    padding: 4px;
+    border-radius: 50%;
+    background-color: #fff;
+}
+
+.ip-custom {
+    width: 100%;
+    padding: 8px 4px;
+    background-color: transparent;
+    border: none;
+    border-bottom: 1px solid #fff;
+    outline: none;
+    color: inherit;
+}
+
+.ip-custom::placeholder {
+    color: inherit;
+}
+
