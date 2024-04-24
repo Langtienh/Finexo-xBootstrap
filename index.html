@@ -39,7 +39,8 @@
                         <a class="nav-link" href="#contact">contact</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#login"><i class="fa-solid fa-user me-2"></i>login</a>
+                        <a class="nav-link btn" href="#login" data-bs-toggle="modal" data-bs-target="#modal-login"><i
+                                class="fa-solid fa-user me-2"></i>login</a>
                     </li>
                 </ul>
                 <div class="search">
@@ -393,6 +394,45 @@
             <p class="my-2 text-black-50 text-center">© 2024 All Rights Reserved By Free Html Templates</p>
         </div>
     </footer>
+
+    <!-- Modal Body -->
+    <!-- if you want to close by clicking outside the modal, delete the last endpoint:data-bs-backdrop and data-bs-keyboard -->
+    <div class="modal fade" id="modal-login">
+        <div class="modal-dialog modal-dialog-centered">
+            <form class="modal-content theme-primary py-5 px-4">
+                <img class="mx-auto mb-4" src="assets/images/login.jfif" alt="">
+                <div class="text-center">
+                    <h4 class="mb-3">Welcome</h4>
+                    <p class="text-white-50">Sign in by entering the information below</p>
+                    <div class="ip-group d-flex w-100 align-items-center py-2 mb-3">
+                        <i class="fa-solid fa-user me-3"></i>
+                        <input class="flex-grow-1 bg-transparent border-0" type="text" placeholder="Username">
+                    </div>
+                    <div class="ip-group d-flex w-100 align-items-center py-2 mb-3">
+                        <i class="fa-solid fa-user me-3"></i>
+                        <input class="flex-grow-1 bg-transparent border-0" type="password" placeholder="Password">
+                    </div>
+                    <div class="mb-3">
+                        <a class="d-block text-login text-end text-decoration-none" href="#">Forgot Password</a>
+                    </div>
+                    <input class="btn btn-lg btn-login w-100 mb-3" type="submit" value="Get Stared">
+                    <p class="">Don't have an account?</p>
+                    <div>
+                        <a class="text-login text-uppercase text-decoration-none" href="#">sign up</a>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <!-- Optional: Place to the bottom of scripts -->
+    <script>
+        const myModal = new bootstrap.Modal(
+            document.getElementById("modal-login"),
+            options,
+        );
+    </script>
+
     <script src="assets/js/main.js"></script>
     <script src="assets/js/popper.min.js"></script>
     <script src="assets/js/bootstrap.min.js"></script>

@@ -73,15 +73,18 @@ body {
 
 @keyframes upDown {
     0% {
-      transform: translateY(-20px);
+        transform: translateY(-20px);
     }
+
     50% {
         transform: translateY(20px);
-      }
-    100% {
-      transform: translateY(-20px); /* Trở lại vị trí ban đầu */
     }
-  }
+
+    100% {
+        transform: translateY(-20px);
+        /* Trở lại vị trí ban đầu */
+    }
+}
 
 section {
     padding-block: 100px;
@@ -128,3 +131,42 @@ section {
     color: inherit;
 }
 
+#modal-login {
+    --bs-modal-width: 350px;
+    --login-primary-color: #B689B0;
+    font-size: 14px;
+}
+
+#modal-login img {
+    border-radius: 50%;
+    width: 100px;
+    height: 100px;
+}
+
+.ip-group {
+    border-bottom: 1px solid var(--login-primary-color);
+}
+
+.ip-group input{
+    outline: none;
+    color: inherit;
+}
+
+.ip-group input::placeholder {
+    color: inherit;
+}
+
+.text-login {
+    color:  var(--login-primary-color);
+}
+
+.btn-login {
+    background-color: var(--login-primary-color);
+    color: inherit;
+    font-size: 16px;
+}
+
+.btn-login:hover {
+    background-color: var(--login-primary-color);
+    opacity: 0.8;
+}
